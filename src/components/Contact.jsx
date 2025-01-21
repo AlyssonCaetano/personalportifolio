@@ -38,20 +38,27 @@ const Contact = () => {
                     <div className="flex-1 w-full">
                         <form className="space-y-4">
                             <div>
-                                <label htmlFor="name" className='block mb-2'>Your Name</label>
-                                <input type="text"
+                                <label 
+                                htmlFor='name'
+                                className='block mb-2'>Your Name</label>
+                                <input type="text" 
+                                id='name'
+                                autoComplete='off'
                                 className='w-full p-2 rounded bd-gray-800 border border-gray-600 focus:outline-none focus:border-green-400'
                                 placeholder='Enter Your Name' />
                             </div>
                             <div>
                                 <label htmlFor="email" className='block mb-2'>Your E-mail</label>
                                 <input type="text"
+                                autoComplete='off'
+                                id='email'
                                 className='w-full p-2 rounded bd-gray-800 border border-gray-600 focus:outline-none focus:border-green-400'
                                 placeholder='Enter Your E-mail' />
                             </div>
                             <div>
                                 <label htmlFor="message" className='block mb-2'>Message</label>
                                 <textarea type="text"
+                                id='message'
                                 className='w-full p-2 rounded bd-gray-800 border border-gray-600 focus:outline-none focus:border-green-400'
                                 rows="5"                                placeholder='Enter Message' />
                             </div>
